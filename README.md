@@ -7,7 +7,7 @@ A simple JavaScript project that calculates some averages given some required da
 - Profession Name
 - Average Salary
 
-## What program shows
+### What program shows
 - General Average Salary
 - Best paid profession
 - Worst paid profession
@@ -16,5 +16,5 @@ A simple JavaScript project that calculates some averages given some required da
 ## UI / UX
 - Light/Dark Theme Switch
 - Mobile first coded
-- Sass
+- Sass / BEM
 

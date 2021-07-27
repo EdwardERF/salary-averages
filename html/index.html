@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Average | Simple JavaScript Project</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Salary Averages</h1>
+
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="item">My GitHub</li>
+        <li class="item">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- This is the switch button tag -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="main-section">
+    <!-- Data entry form -->
+    <form action="" class="main-section__form">
+      <input type="text" class="profession" placeholder="Profession">
+      <input type="number" class="salary" placeholder="Salary">
+      <button type="button" class="add-button">Add profession</button>
+    </form>
+
+    <!-- Statistics -->
+    <section class="main-section__statistics">
+      <div class="main-section__statistics--average-salary">
+        <h1>General Average Salary</h1>
+        <p id="average-salary-info">1000</p>
+      </div>
+      <div class="main-section__statistics--best-paid-profession">
+        <h1>Best Paid Profession</h1>
+        <p id="best-paid-profession">1000</p>
+      </div>
+      <div class="main-section__statistics--worst-paid-profession">
+        <h1>Worst Paid Profession</h1>
+        <p id="worst-paid-profession">1000</p>
+      </div>
+      <div class="main-section__statistics--median-salary">
+        <h1>Salary's median</h1>
+        <p id="median-salary">1000</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__socials">Social Networks here</div>
+    <p class="footer__description">Some short description here</p>
+  </footer>
+  
+  <script src="../js/index.js"></script>
+</body>
+</html>
