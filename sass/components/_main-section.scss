@@ -13,6 +13,7 @@
       border: 1px solid $light-terciary-color;
       background-color: rgba(255,255,255, 0.5);
       font-family: $font1;
+      outline: none;
     }
     button {
       height: 40px;
@@ -24,6 +25,14 @@
       font-family: $font1;
       font-size: .9rem;
       background-color: $light-terciary-color;
+    }
+  }
+  &__input-information {
+    h1 {
+      display: none;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5rem;
     }
   }
   &__statistics {
