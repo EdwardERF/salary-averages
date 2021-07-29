@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6rem;
+  margin-bottom: 5px;
+  max-width: 100%;
+  height: 40px;
+  background-color: $light-terciary-color;
+  color: $light-primary-color;
+  &__logo {
+    font-size: 1.2rem;
+  }
+  &__navbar {
+    display: none;
+  }
+}
+
+.main-section {
+  display: block;
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    input {
+      height: 40px;
+      margin: 5px 10px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid $light-terciary-color;
+      background-color: rgba(255,255,255, 0.5);
+      font-family: $font1;
+    }
+    button {
+      height: 40px;
+      margin: 5px 10px;
+      border-radius: 3px;
+      color: $light-primary-color;
+      font-weight: 700;
+      border: none;
+      font-family: $font1;
+      font-size: .9rem;
+      background-color: $light-terciary-color;
+    }
+  }
+}

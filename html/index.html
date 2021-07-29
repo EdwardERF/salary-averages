@@ -12,20 +12,23 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="logo">Salary Averages</h1>
+    <h1 class="header__logo">Salary Averages</h1>
 
-    <nav class="navbar">
-      <ul class="navbar__links">
+    <!-- Light/Dark Theme button -->
+    <div class="header__theme-switcher"></div>
+
+    <!-- Hamburger button -->
+    <div class="header__menu-btn">
+      <div class="header__menu-btn-burger"></div>
+    </div>
+
+    <!-- Hamburger content - Default display: none -->
+    <nav class="header__navbar">
+      <ul class="header__navbar--links">
         <li class="item">My GitHub</li>
         <li class="item">Contact</li>
       </ul>
     </nav>
-
-    <!-- This is the switch button tag -->
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
   </header>
 
   <!-- MAIN SECTION -->
