@@ -64,5 +64,29 @@ html {
   font-size: 0.9rem;
   background-color: #79A3B1;
 }
+.main-section__statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+.main-section__statistics-container {
+  border: 1px solid #79A3B1;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align: center;
+}
+.main-section__statistics-container h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.main-section__statistics-container p {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map */
