@@ -5,6 +5,7 @@
 }
 
 body {
+  height: 100vh;
   background-color: #D0E8F2;
   color: #456268;
 }
@@ -87,6 +88,37 @@ html {
 .main-section__statistics-container p {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #79A3B1;
+  color: #FCF8EC;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.footer__socials a {
+  margin: 5px;
+}
+.footer__socials a:hover {
+  cursor: pointer;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+.footer p {
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
