@@ -68,7 +68,7 @@ html {
   background-color: #79A3B1;
 }
 .main-section__input-information h1 {
-  display: none;
+  display: flex;
   justify-content: center;
   text-align: center;
   font-size: 1.5rem;

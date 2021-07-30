@@ -34,16 +34,16 @@
   <!-- MAIN SECTION -->
   <main class="main-section">
     <!-- Data entry form -->
-    <form action="" class="main-section__form">
-      <input type="text" class="profession" placeholder="Profession">
-      <input type="number" class="salary" placeholder="Salary">
-      <button type="button" class="add-button">Add profession</button>
+    <form id="main-form" action="" class="main-section__form">
+      <input id="professionName" type="text" class="profession" placeholder="Profession">
+      <input id="professionSalary" type="number" class="salary" placeholder="Salary">
+      <button id="getProfession" type="button" class="add-button" onclick="addProfession()">Add profession</button>
     </form>
 
     <!-- User Information -->
-    <section class="main-section__input-information">
+    <section id="input-info" class="main-section__input-information">
       <h1>Professions added</h1>
-      <!-- p tags added with JavaScript here -->
+      <p id="paragraph-info"></p>
     </section>
 
     <!-- Statistics -->
