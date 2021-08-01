@@ -73,14 +73,17 @@ html {
   text-align: center;
   font-size: 1.5rem;
 }
-.main-section__statistics {
+.main-section__input-container p {
+  font-size: 1rem !important;
+}
+.main-section__statistics, .main-section__input-information {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 5px 10px;
 }
-.main-section__statistics-container {
+.main-section__statistics-container, .main-section__input-container {
   border: 1px solid #79A3B1;
   border-radius: 3px;
   width: 100%;
@@ -88,18 +91,22 @@ html {
   padding: 20px;
   text-align: center;
 }
-.main-section__statistics-container h1 {
+.main-section__statistics-container h1, .main-section__input-container h1 {
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 5px;
 }
-.main-section__statistics-container p {
+.main-section__statistics-container p, .main-section__input-container p {
   font-size: 2rem;
   font-weight: bold;
 }
+.main-section .bigTitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 10px;

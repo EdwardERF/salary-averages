@@ -28,11 +28,18 @@
     }
   }
   &__input-information {
+    @extend .main-section__statistics;
     h1 {
       display: flex;
       justify-content: center;
       text-align: center;
       font-size: 1.5rem;
+    }
+  }
+  &__input-container {
+    @extend .main-section__statistics-container;
+    p {
+      font-size: 1rem !important;
     }
   }
   &__statistics {
@@ -58,5 +65,9 @@
         font-weight: bold;
       }
     }
+  }
+  .bigTitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
