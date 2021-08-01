@@ -1,7 +1,19 @@
 // Variables
-professions = [];
+professions = [
+  // ["Maestro", 1000],
+  // ["Profesor", 1200],
+  // ["Sr. Frontend", 1400]
+];
 
 // Utils
+function esPar(number) {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function addInputInfo(tagId, professionName, professionSalary) {
   let newText = `${professionName}: ${professionSalary}` + "\n";
 
@@ -9,9 +21,9 @@ function addInputInfo(tagId, professionName, professionSalary) {
   currentText.innerText = currentText.innerText + newText;
 }
 
-function clearParagraphById(tagId) {
+function createParagraphById(tagId, content) {
   let tag = document.getElementById(tagId);
-  tag.innerText = "";
+  tag.innerText = content;
 }
 
 function createErrorParagraph(tagId, errorMessage) {
@@ -40,7 +52,7 @@ function addProfession() {
       removeParagraphById("errorTag");
     }
 
-    clearParagraphById("paragraph-info");
+    createParagraphById("paragraph-info", "");
 
     professions.push([professionName, professionSalary]);
 
@@ -53,4 +65,6 @@ function addProfession() {
       "You must put both Name and Salary to correctly add a profession."
     );
   }
+
+  getStatisticInfo();
 }
