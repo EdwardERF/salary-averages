@@ -21,6 +21,8 @@ $dark-variation-color: #DBEDF3;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: $light-secondary-color;
   color: $light-variation-color;

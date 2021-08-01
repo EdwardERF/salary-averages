@@ -14,6 +14,11 @@ function esPar(number) {
   }
 }
 
+function clearInputs() {
+  document.getElementById("professionName").value = "";
+  document.getElementById("professionSalary").value = "";
+}
+
 function addInputInfo(tagId, professionName, professionSalary) {
   let newText = `${professionName}: ${professionSalary}` + "\n";
 
@@ -47,6 +52,8 @@ function addProfession() {
 
   // Chequeo de que se hayan ingresado los dos valores necesarios
   if (professionName != "" && professionSalary != "") {
+    clearInputs();
+    
     // Chequeando si hay mensaje de error, para borrarlo
     if (document.getElementById("errorTag")) {
       removeParagraphById("errorTag");
