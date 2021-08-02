@@ -31,12 +31,28 @@ html {
   background-color: #79A3B1;
   color: #FCF8EC;
 }
+.header__theme-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+.header__theme-switcher button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.header__theme-switcher button:hover {
+  cursor: pointer;
+}
+.header__theme-switcher img {
+  width: 22px;
+  height: 22px;
+}
 .header__logo {
   font-size: 1.2rem;
   font-weight: 500;
-}
-.header__navbar {
-  display: none;
 }
 
 .main-section {

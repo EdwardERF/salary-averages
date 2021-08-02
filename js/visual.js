@@ -21,10 +21,13 @@ function switchTheme() {
     document.getElementById("header").style.backgroundColor = darkTerciaryColor;
     document.getElementById("header").style.color = darkPrimaryColor;
     document.getElementById("professionName").style.borderColor = darkTerciaryColor;
+    document.getElementById("professionName").style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
     document.getElementById("professionSalary").style.borderColor = darkTerciaryColor;
+    document.getElementById("professionSalary").style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
     document.getElementById("getProfession").style.backgroundColor = darkTerciaryColor;
     document.getElementById("getProfession").style.color = darkPrimaryColor;
     document.getElementById("input-statistics").style.borderColor = darkTerciaryColor;
+    document.getElementById("switch-img").src = "../img/dark-switch.png";
 
     currentTheme = 'dark';
   } else {
@@ -39,6 +42,7 @@ function switchTheme() {
     document.getElementById("getProfession").style.backgroundColor = lightTerciaryColor;
     document.getElementById("getProfession").style.color = lightPrimaryColor;
     document.getElementById("input-statistics").style.borderColor = lightTerciaryColor;
+    document.getElementById("switch-img").src = "../img/light-switch.png";
 
     currentTheme = 'light';
   }

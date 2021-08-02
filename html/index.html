@@ -14,24 +14,16 @@
     <title>Salary Average | Simple JavaScript Project</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header id="header" class="header">
       <h1 class="header__logo">Salary Averages</h1>
 
       <!-- Light/Dark Theme button -->
-      <div class="header__theme-switcher"></div>
-
-      <!-- Hamburger button -->
-      <div class="header__menu-btn">
-        <div class="header__menu-btn-burger"></div>
+      <div class="header__theme-switcher">
+        <button type="button" onclick="switchTheme()">
+          <img id="switch-img" src="../img/light-switch.png" alt="Theme Icon">
+        </button>
       </div>
-
-      <!-- Hamburger content - Default display: none -->
-      <nav class="header__navbar">
-        <ul class="header__navbar--links">
-          <li class="item">My GitHub</li>
-          <li class="item">Contact</li>
-        </ul>
-      </nav>
     </header>
 
     <!-- MAIN SECTION -->
@@ -94,7 +86,7 @@
     <footer id="footer" class="footer">
       <div class="footer__socials">
         <a target="_blank" href="https://github.com/EdwardERF" class="github">
-          <img src="../socials/light-github.png" alt="" class="github-logo" />
+          <img src="../img/light-github.png" alt="" class="github-logo" />
         </a>
 
         <a
@@ -102,7 +94,7 @@
           href="https://twitter.com/edward_erf"
           class="twitter"
         >
-          <img src="../socials/light-twitter.png" alt="" class="twitter-logo" />
+          <img src="../img/light-twitter.png" alt="" class="twitter-logo" />
         </a>
 
         <a
@@ -111,7 +103,7 @@
           class="linkedin"
         >
           <img
-            src="../socials/light-linkedin.png"
+            src="../img/light-linkedin.png"
             alt=""
             class="linkedin-logo"
           />
