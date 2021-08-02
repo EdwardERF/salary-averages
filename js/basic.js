@@ -6,6 +6,19 @@ professions = [
 ];
 
 // Utils
+function checkDisplay() {
+  const inputInfo = document.getElementById("input-info");
+  const inputStatistics = document.getElementById("input-statistics");
+
+  if (professions.length == 0) {
+    inputInfo.style.display = "none";
+    inputStatistics.style.display = "none";
+  } else {
+    inputInfo.style.display = "flex";
+    inputStatistics.style.display = "flex";
+  }
+}
+
 function esPar(number) {
   if (number % 2 === 0) {
     return true;
@@ -66,6 +79,8 @@ function addProfession() {
     for (let i = 0; i < professions.length; i++) {
       addInputInfo("input-info", professions[i][0], professions[i][1]);
     }
+
+    checkDisplay();
   } else {
     createErrorParagraph(
       "main-form",
@@ -75,3 +90,6 @@ function addProfession() {
 
   getStatisticInfo();
 }
+
+// ---
+checkDisplay();
