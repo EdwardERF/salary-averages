@@ -1,6 +1,12 @@
 // Font variables
 $font1: 'Roboto', sans-serif;
 $font2: 'Lato', sans-serif;
+$currentTheme: 'light';
+
+$primary-color: "";
+$secondary-color: "";
+$terciary-color: "";
+$variation-color: "";
 
 // Light palette
 $light-primary-color: #FCF8EC;
@@ -14,6 +20,25 @@ $dark-secondary-color: #404B69;
 $dark-terciary-color: #00818A;
 $dark-variation-color: #DBEDF3;
 
+@if ($currentTheme == 'light') {
+  $primary-color: $light-primary-color;
+  $secondary-color: $light-secondary-color;
+  $terciary-color: $light-terciary-color;
+  $variation-color: $light-variation-color;
+} @else {
+  $primary-color: $dark-primary-color;
+  $secondary-color: $dark-secondary-color;
+  $terciary-color: $dark-terciary-color;
+  $variation-color: $dark-variation-color;
+}
+
+.dark-theme {
+  $primary-color: $dark-primary-color;
+  $secondary-color: $dark-secondary-color;
+  $terciary-color: $dark-terciary-color;
+  $variation-color: $dark-variation-color;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +49,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: $light-secondary-color;
-  color: $light-variation-color;
+  background-color: $secondary-color;
+  color: $variation-color;
 }
 
 html {

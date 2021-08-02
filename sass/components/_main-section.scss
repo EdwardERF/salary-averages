@@ -10,7 +10,7 @@
       margin: 5px 10px;
       padding: 10px;
       border-radius: 3px;
-      border: 1px solid $light-terciary-color;
+      border: 1px solid $terciary-color;
       background-color: rgba(255,255,255, 0.5);
       font-family: $font1;
       outline: none;
@@ -19,12 +19,12 @@
       height: 40px;
       margin: 5px 10px;
       border-radius: 3px;
-      color: $light-primary-color;
       font-weight: 700;
       border: none;
       font-family: $font1;
       font-size: .9rem;
-      background-color: $light-terciary-color;
+      background-color: $terciary-color;
+      color: $primary-color;
     }
   }
   &__input-information {
@@ -49,7 +49,7 @@
     flex-direction: column;
     margin: 5px 10px;
     &-container {
-      border: 1px solid $light-terciary-color;
+      border: 1px solid $terciary-color;
       border-radius: 3px;
       width: 100%;
       margin-bottom: 15px;

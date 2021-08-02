@@ -62,12 +62,12 @@ html {
   height: 40px;
   margin: 5px 10px;
   border-radius: 3px;
-  color: #FCF8EC;
   font-weight: 700;
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   background-color: #79A3B1;
+  color: #FCF8EC;
 }
 .main-section__input-information h1 {
   display: flex;
