@@ -11,10 +11,8 @@ function checkDisplay() {
   const inputStatistics = document.getElementById("input-statistics");
 
   if (professions.length == 0) {
-    // inputInfo.style.display = "none";
     inputInfo.style.visibility = "hidden";
     inputInfo.style.opacity = 0;
-    // inputStatistics.style.display = "none";
     inputStatistics.style.visibility = "hidden";
     inputStatistics.style.opacity = 0;
   } else {
@@ -22,10 +20,7 @@ function checkDisplay() {
     inputInfo.style.opacity = 1;
     inputStatistics.style.visibility = "visible";
     inputStatistics.style.opacity = 1;
-
-    // inputInfo.style.display = "flex";
     inputInfo.style.transition = "all 1s";
-    // inputStatistics.style.display = "flex";
     inputStatistics.style.transition = "all 1s";
   }
 }
@@ -69,7 +64,7 @@ function removeParagraphById(paragraphId) {
   paragrah.remove();
 }
 
-
+// MAIN FUNCTION
 function addProfession() {
   let professionName = document.getElementById("professionName").value;
   let professionSalary = document.getElementById("professionSalary").value;
@@ -77,7 +72,7 @@ function addProfession() {
   // Chequeo de que se hayan ingresado los dos valores necesarios
   if (professionName != "" && professionSalary != "") {
     clearInputs();
-    
+
     // Chequeando si hay mensaje de error, para borrarlo
     if (document.getElementById("errorTag")) {
       removeParagraphById("errorTag");
@@ -93,10 +88,12 @@ function addProfession() {
 
     checkDisplay();
   } else {
-    createErrorParagraph(
-      "main-form",
-      "You must put both Name and Salary to correctly add a profession."
-    );
+    if (!document.getElementById("errorTag")) {
+      createErrorParagraph(
+        "main-form",
+        "You must put both Name and Salary to correctly add a profession."
+      );
+    } 
   }
 
   getStatisticInfo();
