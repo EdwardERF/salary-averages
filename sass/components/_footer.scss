@@ -8,6 +8,7 @@
   flex-direction: column;
   background-color: $light-terciary-color;
   color: $light-primary-color;
+  transition: all .3s;
   &__socials {
     display: flex;
     justify-content: space-evenly;

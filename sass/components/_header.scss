@@ -8,6 +8,7 @@
   height: 40px;
   background-color: $light-terciary-color;
   color: $light-primary-color;
+  transition: all .3s;
   &__theme-switcher {
     display: flex;
     justify-content: center;

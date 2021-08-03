@@ -10,6 +10,7 @@ body {
   height: 100vh;
   background-color: #D0E8F2;
   color: #456268;
+  transition: all 0.3s;
 }
 
 html {
@@ -30,6 +31,7 @@ html {
   height: 40px;
   background-color: #79A3B1;
   color: #FCF8EC;
+  transition: all 0.3s;
 }
 .header__theme-switcher {
   display: flex;
@@ -133,6 +135,7 @@ html {
   flex-direction: column;
   background-color: #79A3B1;
   color: #FCF8EC;
+  transition: all 0.3s;
 }
 .footer__socials {
   display: flex;

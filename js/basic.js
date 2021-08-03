@@ -11,11 +11,22 @@ function checkDisplay() {
   const inputStatistics = document.getElementById("input-statistics");
 
   if (professions.length == 0) {
-    inputInfo.style.display = "none";
-    inputStatistics.style.display = "none";
+    // inputInfo.style.display = "none";
+    inputInfo.style.visibility = "hidden";
+    inputInfo.style.opacity = 0;
+    // inputStatistics.style.display = "none";
+    inputStatistics.style.visibility = "hidden";
+    inputStatistics.style.opacity = 0;
   } else {
-    inputInfo.style.display = "flex";
-    inputStatistics.style.display = "flex";
+    inputInfo.style.visibility = "visible";
+    inputInfo.style.opacity = 1;
+    inputStatistics.style.visibility = "visible";
+    inputStatistics.style.opacity = 1;
+
+    // inputInfo.style.display = "flex";
+    inputInfo.style.transition = "all 1s";
+    // inputStatistics.style.display = "flex";
+    inputStatistics.style.transition = "all 1s";
   }
 }
 
