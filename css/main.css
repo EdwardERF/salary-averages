@@ -82,10 +82,15 @@ html {
   border-radius: 3px;
   font-weight: 700;
   border: none;
-  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
+  cursor: pointer;
   background-color: #79A3B1;
   color: #FCF8EC;
+  font-family: "Roboto", sans-serif;
+}
+.main-section__form button:focus-visible {
+  outline: none;
+  background-color: #456268;
 }
 .main-section__input-information h1 {
   display: flex;
@@ -125,6 +130,11 @@ html {
   margin-bottom: 10px;
 }
 
+#errorTag {
+  margin: 10px 10px;
+  color: #c44109;
+}
+
 .footer {
   margin-top: auto;
   width: 100%;
@@ -140,15 +150,24 @@ html {
 .footer__socials {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
 }
 .footer__socials a {
   margin: 5px;
+  border-radius: 15px;
 }
 .footer__socials a:hover {
   cursor: pointer;
 }
+.footer__socials a:focus-visible {
+  outline: none;
+  border: 2px solid #FCF8EC;
+}
 .footer img {
+  display: flex;
+  justify-self: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 }

@@ -21,10 +21,15 @@
       border-radius: 3px;
       font-weight: 700;
       border: none;
-      font-family: $font1;
       font-size: .9rem;
+      cursor: pointer;
       background-color: $light-terciary-color;
       color: $light-primary-color;
+      font-family: $font1;
+    }
+    button:focus-visible { 
+      outline: none;
+      background-color: $light-variation-color;
     }
   }
   &__input-information {
@@ -70,4 +75,10 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
+}
+
+// p tag created with JS
+#errorTag {
+  margin: 10px 10px;
+  color: #c44109;
 }
